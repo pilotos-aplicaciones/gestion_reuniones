@@ -22,7 +22,7 @@
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 html{font-size:16px}
 body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);height:100vh;overflow:hidden;-webkit-font-smoothing:antialiased}
- 
+
 /* ── LAYOUT ─────────────────────────────────────────────────────────────── */
 .app{display:flex;flex-direction:column;height:100vh}
 .hdr{background:var(--accent);padding:0 16px;height:54px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;z-index:200}
@@ -35,18 +35,18 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);hei
 .hbtn.primary{background:#fff;color:var(--accent);font-weight:600}
 .hbtn:hover{background:rgba(255,255,255,.28)}
 .hbtn.primary:hover{background:#f0f0f0}
- 
+
 .body{display:flex;flex:1;overflow:hidden}
- 
+
 /* ── SIDEBAR FILTROS (idéntico a tareas_rvc) ─────────────────────────── */
 .sidebar{width:220px;flex-shrink:0;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;display:flex;flex-direction:column}
- 
+
 /* stats */
 .sb-stats{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:12px 12px 10px;border-bottom:1px solid var(--border)}
 .stat{padding:8px 10px;border-radius:8px}
 .stat-num{font-size:20px;font-weight:600;letter-spacing:-1px;line-height:1}
 .stat-lbl{font-size:9px;font-weight:500;margin-top:3px}
- 
+
 /* filtros */
 .fblock{padding:6px 12px 8px;border-bottom:1px solid var(--border)}
 .fblock-title{font-size:11px;font-weight:600;color:var(--text2);margin-bottom:4px;padding:2px 0}
@@ -59,19 +59,19 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);hei
 .fopt.active{background:var(--accent-l);color:var(--accent);font-weight:600}
 .fcnt{font-size:10px;padding:1px 6px;border-radius:8px;background:var(--surface2);color:var(--text3);font-weight:600;flex-shrink:0}
 .fopt.active .fcnt{background:var(--accent);color:#fff}
- 
+
 /* temas sidebar */
 .tema-dot-sb{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-right:4px}
 .fopt .tema-inner{display:flex;align-items:center;gap:4px;flex:1;min-width:0;overflow:hidden}
 .fopt .tema-inner span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
- 
+
 .clear-filters-btn{display:flex;align-items:center;justify-content:center;gap:6px;padding:8px;margin:8px 12px 4px;border-radius:7px;background:var(--red-l);color:var(--red);font-size:11px;font-weight:600;cursor:pointer;border:none;font-family:'DM Sans',sans-serif;width:calc(100% - 24px)}
 .clear-filters-btn:hover{background:#EDADAA}
 .sb-add-tema:hover{color:var(--accent)}
- 
+
 /* ── CONTENIDO PRINCIPAL ──────────────────────────────────────────────── */
 .content{flex:1;overflow:hidden;display:flex;flex-direction:column;min-width:0}
- 
+
 /* ACTION BAR */
 .action-bar{padding:5px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px;min-height:36px;background:var(--surface);flex-shrink:0;transition:background .2s}
 .action-bar.sel{background:#8B1A1A}
@@ -89,14 +89,14 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);hei
 .action-bar:not(.sel) .ab-btn{display:none}
 .action-bar:not(.sel) .ab-btn-always{display:flex;background:var(--surface2);color:var(--text2);border:1px solid var(--border)}
 .action-bar:not(.sel) .ab-btn-always:hover{border-color:var(--accent);color:var(--accent)}
- 
+
 /* SEARCH */
 .search-bar{padding:6px 18px 5px;flex-shrink:0;background:var(--bg)}
 .search-wrap{position:relative}
 .search-icon{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--text3);font-size:13px;pointer-events:none}
 .search{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:6px 12px 6px 30px;font-size:13px;font-family:'DM Sans',sans-serif;outline:none;color:var(--text)}
 .search:focus{border-color:var(--accent)}
- 
+
 /* LISTA PRINCIPAL — cascada */
 .main-list{flex:1;overflow-y:auto;padding:0 18px 60px}
 .main-list::-webkit-scrollbar{width:8px}
@@ -107,7 +107,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);hei
 .sidebar::-webkit-scrollbar-track{background:var(--surface2)}
 .sidebar::-webkit-scrollbar-thumb{background:#A09A93;border-radius:4px}
 .sidebar::-webkit-scrollbar-thumb:hover{background:#6B6560}
- 
+
 /* GRUPO TEMA */
 .grupo{margin-top:12px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
 .grp-hdr{display:flex;align-items:center;gap:8px;padding:9px 14px;background:var(--surface2);cursor:pointer;user-select:none;transition:background .12s}
@@ -126,7 +126,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);hei
 .grp-opts{display:flex;gap:4px}
 .grp-opt-btn{background:none;border:none;cursor:pointer;color:var(--text3);font-size:11px;padding:3px 6px;border-radius:5px;font-family:'DM Sans',sans-serif}
 .grp-opt-btn:hover{background:var(--accent-l);color:var(--accent)}
- 
+
 /* SUBGRUPO REUNIÓN */
 .subgrupo{border-top:1px solid var(--border)}
 .sgrp-hdr{display:flex;align-items:center;gap:8px;padding:8px 14px 8px 28px;background:var(--surface);cursor:pointer;user-select:none;border-bottom:1px solid var(--border);transition:background .12s}
@@ -143,10 +143,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);hei
 .b-ok{background:var(--green-l);color:var(--green)}
 .b-pen{background:var(--amber-l);color:var(--amber)}
 .b-venc{background:var(--red-l);color:var(--red)}
- 
+
 /* DETALLE (panel expandible dentro de la cascada) — mantenido para compatibilidad pero oculto */
 .det-panel{display:none}
- 
+
 /* ── MODAL REUNIÓN ────────────────────────────────────────────────────────── */
 @keyframes slideUp{from{transform:translateY(40px);opacity:0}to{transform:translateY(0);opacity:1}}
 .reu-overlay{display:none;position:fixed;inset:0;background:transparent;z-index:400;align-items:center;justify-content:center;padding:0}
@@ -162,7 +162,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);hei
 .reu-modal-body::-webkit-scrollbar-thumb{background:#A09A93;border-radius:4px}
 .reu-modal-body::-webkit-scrollbar-thumb:hover{background:#6B6560}
 .reu-modal-footer{padding:10px 18px;border-top:1px solid var(--border);display:flex;gap:8px;justify-content:flex-end;flex-shrink:0;background:var(--surface);position:relative;z-index:10}
- 
+
 /* Secciones del detalle */
 .dsec{background:var(--surface);border:1px solid var(--border);border-radius:8px;margin-bottom:12px;overflow:hidden}
 .dsec-hdr{display:flex;align-items:center;justify-content:space-between;padding:8px 14px;background:var(--surface2);border-bottom:1px solid var(--border)}
@@ -171,7 +171,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);hei
 .dsec-action{font-size:11px;color:var(--accent);cursor:pointer;font-weight:500;background:none;border:none;font-family:'DM Sans',sans-serif;padding:2px 8px;border-radius:5px}
 .dsec-action:hover{background:var(--accent-l)}
 .dsec-body{padding:12px 14px}
- 
+
 /* inputs */
 .fi{width:100%;background:var(--bg);border:1.5px solid var(--border);border-radius:6px;padding:8px 10px;font-size:13px;font-family:'DM Sans',sans-serif;color:var(--text);outline:none;resize:vertical;transition:border-color .12s}
 .fi:focus{border-color:var(--accent)}
@@ -181,7 +181,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);hei
 .fi-group:last-child{margin-bottom:0}
 .fi-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .fi-row-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
- 
+
 /* participantes */
 .part-row{display:flex;align-items:center;gap:8px;padding:5px 10px;background:var(--bg);border:1px solid var(--border);border-radius:6px;margin-bottom:5px}
 .part-info{flex:1;min-width:0;display:flex;align-items:center;gap:6px}
@@ -189,7 +189,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);hei
 .part-cargo{font-size:11px;color:var(--text3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex-shrink:1}
 .del-btn{background:none;border:none;cursor:pointer;color:var(--text3);font-size:12px;padding:3px 5px;border-radius:4px}
 .del-btn:hover{color:var(--accent);background:var(--accent-l)}
- 
+
 /* ── JERARQUÍA DE TEMAS ─────────────────────────────────────────────────── */
 .th-sec{border:1px solid var(--border);border-radius:8px;margin-bottom:6px;overflow:hidden;background:var(--surface)}
 .th-sec-hdr{display:flex;align-items:center;gap:8px;padding:6px 10px;background:var(--surface2);border-bottom:1px solid var(--border);cursor:pointer;user-select:none}
@@ -234,23 +234,23 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);hei
 .th-s2-name:hover{border-bottom-color:var(--blue);opacity:.7;}
 .th-s2-name:focus{background:rgba(255,255,255,.7);border-radius:4px;padding:0 4px;border-bottom:1px solid var(--blue);}
 .th-sub2-body{padding:5px 8px;background:#fff;display:flex;flex-direction:column;gap:3px}
- 
+
 /* Acuerdos */
 .ac-block{background:#EAF2ED;border:1px solid #D0E8D8;border-radius:5px;padding:5px 8px;display:flex;align-items:flex-start;gap:6px}
 .ac-dot{color:var(--green);font-size:11px;font-weight:700;flex-shrink:0;margin-top:1px}
 .ac-txt{flex:1;background:none;border:none;outline:none;font-size:12px;font-family:'DM Sans',sans-serif;color:var(--text);resize:none;min-height:20px}
 .ac-txt:focus{background:rgba(255,255,255,.6);border-radius:4px;padding:2px 4px}
- 
+
 /* Drag handles en temas */
 .th-drag{cursor:grab;color:var(--text3);font-size:13px;padding:0 3px;flex-shrink:0}
 .th-drag:active{cursor:grabbing}
- 
+
 /* Add buttons de nivel */
 .th-add-btn{display:flex;align-items:center;gap:5px;padding:4px 8px;border-radius:5px;font-size:11px;color:var(--text3);cursor:pointer;border:1px dashed var(--border);background:none;font-family:'DM Sans',sans-serif;margin-top:4px;transition:all .12s}
 .th-add-btn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-l)}
 .th-del-btn{background:none;border:none;cursor:pointer;color:var(--text3);font-size:11px;padding:2px 5px;border-radius:4px;flex-shrink:0}
 .th-del-btn:hover{color:var(--accent);background:var(--accent-l)}
- 
+
 /* tareas */
 .task-row{display:flex;align-items:flex-start;gap:8px;padding:5px 8px;background:#EAF2ED;border:1px solid #D0E8D8;border-radius:6px;margin-bottom:3px;transition:background .1s}
 .task-row:hover{background:#f7f4ef}
@@ -273,11 +273,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);hei
 .task-plazo{font-size:11px;font-family:'DM Mono',monospace;color:var(--text3)}
 .task-plazo.v{color:var(--red);font-weight:600}
 .task-plazo.h{color:var(--amber);font-weight:600}
- 
+
 /* nueva tarea mini */
 .ntask-form{background:var(--surface);border:1.5px dashed var(--border);border-radius:7px;padding:10px;margin-top:6px;display:none;flex-direction:column;gap:8px}
 .ntask-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
- 
+
 /* add row */
 .add-row{display:flex;gap:7px;margin-top:6px}
 .add-inp{flex:1;background:var(--bg);border:1.5px dashed var(--border);border-radius:6px;padding:7px 10px;font-size:12px;font-family:'DM Sans',sans-serif;color:var(--text);outline:none}
@@ -286,11 +286,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);hei
 .add-btn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-l)}
 .add-btn.p{background:var(--accent);color:#fff;border:none}
 .add-btn.p:hover{background:#b01f1f}
- 
+
 /* add group (nuevo tema o nueva reunión) */
 .add-grupo{display:flex;align-items:center;gap:8px;padding:9px 14px;border:1.5px dashed var(--border);border-radius:var(--r);cursor:pointer;font-size:12px;color:var(--text3);transition:all .15s;margin-top:6px}
 .add-grupo:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-l)}
- 
+
 /* det header acciones */
 .det-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
 .det-btns{display:flex;gap:7px}
@@ -299,13 +299,13 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);hei
 .dbt-acta:hover{background:#b01f1f}
 .dbt-sec{background:var(--surface2);color:var(--text2);border:1px solid var(--border)}
 .dbt-sec:hover{background:var(--border)}
- 
+
 /* empty */
 .empty{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 20px;text-align:center;gap:10px}
 .empty-ico{font-size:36px;opacity:.3}
 .empty-ttl{font-size:15px;font-weight:600;color:var(--text2)}
 .empty-sub{font-size:12px;color:var(--text3);line-height:1.5;max-width:240px}
- 
+
 /* ── MODAL ACTA ────────────────────────────────────────────────────────── */
 .modal-ov{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:500;display:flex;align-items:center;justify-content:center;padding:20px}
 .modal{background:var(--surface);border-radius:14px;width:100%;max-width:700px;max-height:88vh;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.25)}
@@ -316,11 +316,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);hei
 .modal-x:hover{background:var(--surface2)}
 .modal-body{flex:1;overflow-y:auto;padding:16px 18px}
 .modal-footer{padding:12px 18px;border-top:1px solid var(--border);display:flex;gap:8px;justify-content:flex-end;flex-shrink:0}
- 
+
 .acta-tabs{display:flex;gap:4px;margin-bottom:12px}
 .atab{padding:6px 13px;border-radius:7px;font-size:12px;font-weight:500;cursor:pointer;border:1px solid var(--border);background:var(--bg);color:var(--text2);transition:all .12s}
 .atab.active{background:var(--accent);color:#fff;border-color:var(--accent)}
- 
+
 .acta-pre{background:var(--bg);border:1px solid var(--border);border-radius:7px;padding:16px;font-size:12px;line-height:1.6;color:var(--text);white-space:pre-wrap;font-family:'DM Mono',monospace;min-height:280px;outline:none}
 .mail-card{background:var(--surface);border:1px solid var(--border);border-radius:7px;overflow:hidden}
 .mail-row{display:flex;gap:8px;padding:8px 13px;border-bottom:1px solid var(--border);font-size:12px}
@@ -328,15 +328,15 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);hei
 .mail-val{color:var(--text)}
 .mail-val.subj{font-weight:600}
 .mail-cuerpo{padding:14px;font-size:12px;line-height:1.7;color:var(--text);white-space:pre-wrap;font-family:'DM Sans',sans-serif;outline:none;min-height:220px}
- 
+
 /* toast */
 .toast{position:fixed;bottom:22px;right:22px;background:var(--text);color:#fff;padding:9px 16px;border-radius:8px;font-size:12px;font-weight:500;z-index:999;opacity:0;transform:translateY(6px);transition:all .2s;pointer-events:none}
 .toast.show{opacity:1;transform:translateY(0)}
- 
+
 ::-webkit-scrollbar{width:4px}
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
- 
+
 /* ── APUNTES EDITOR ─────────────────────────── */
 .apuntes-wrap{margin-top:4px;margin-bottom:6px;border:1px solid var(--border);border-radius:8px;overflow:hidden;background:#fff}
 .apuntes-toolbar{display:none;gap:2px;padding:4px 6px;background:var(--surface2);border-bottom:1px solid var(--border);flex-wrap:nowrap;align-items:center}
@@ -352,7 +352,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);hei
 .apuntes-editor li{margin:2px 0}
 .apuntes-label{font-size:10px;font-weight:700;color:#8B6E3A;text-transform:uppercase;letter-spacing:.4px;margin-bottom:3px;margin-top:8px;display:flex;align-items:center;gap:4px}
 </style>
- 
+
 <!-- PANTALLA LOGIN -->
 <style>
 #login-screen{display:none;position:fixed;inset:0;background:#1A1A2E;flex-direction:column;align-items:center;justify-content:center;gap:24px;z-index:9999}
@@ -367,7 +367,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);hei
 .logout-btn{background:none;border:1px solid rgba(255,255,255,.3);color:rgba(255,255,255,.8);border-radius:6px;padding:3px 8px;font-size:11px;cursor:pointer;font-family:'DM Sans',sans-serif}
 .logout-btn:hover{background:rgba(255,255,255,.15)}
 </style>
- 
+
 <div id="login-screen">
   <div class="login-box">
     <div class="login-logo">RVC</div>
@@ -379,9 +379,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);hei
     </button>
   </div>
 </div>
- 
+
 <div id="app" style="display:none;flex-direction:column;height:100vh">
- 
+
 <!-- PWA -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -394,7 +394,7 @@ if ('serviceWorker' in navigator) {
 </head>
 <body>
 <div class="app">
- 
+
   <!-- HEADER -->
   <header class="hdr">
     <div class="hdr-brand">
@@ -426,18 +426,18 @@ if ('serviceWorker' in navigator) {
       </div>
     </div>
   </header>
- 
+
   <div class="body">
- 
+
     <!-- SIDEBAR FILTROS -->
     <div class="sidebar" id="sidebar">
- 
+
       <!-- Stats -->
       <div class="sb-stats" id="sb-stats"></div>
- 
+
       <!-- Limpiar filtros -->
       <button class="clear-filters-btn" onclick="clearAllFilters()">✕ Limpiar todos los filtros</button>
- 
+
       <!-- Filtro: Última reunión -->
       <div class="fblock">
         <div class="fblock-title fblock-toggle" onclick="toggleFblock(this)">
@@ -449,7 +449,7 @@ if ('serviceWorker' in navigator) {
           </div>
         </div>
       </div>
- 
+
       <!-- Filtro: Temas -->
       <div class="fblock">
         <div class="fblock-title fblock-toggle" onclick="toggleFblock(this)">
@@ -457,7 +457,7 @@ if ('serviceWorker' in navigator) {
         </div>
         <div class="fblock-body" id="fb-temas"></div>
       </div>
- 
+
       <!-- Filtro: Estado tareas -->
       <div class="fblock">
         <div class="fblock-title fblock-toggle" onclick="toggleFblock(this)">
@@ -472,7 +472,7 @@ if ('serviceWorker' in navigator) {
           <div class="fopt" onclick="setFiltro('estadoTarea','vencida',this)"><span>⚠ Vencidas</span><span class="fcnt" id="fc-est-venc">0</span></div>
         </div>
       </div>
- 
+
       <!-- Filtro: Responsable -->
       <div class="fblock">
         <div class="fblock-title fblock-toggle" onclick="toggleFblock(this)">
@@ -480,14 +480,14 @@ if ('serviceWorker' in navigator) {
         </div>
         <div class="fblock-body" id="fb-responsables"></div>
       </div>
- 
- 
- 
+
+
+
     </div>
- 
+
     <!-- CONTENIDO PRINCIPAL -->
     <div class="content">
- 
+
       <!-- ACTION BAR -->
       <div class="action-bar" id="action-bar">
         <div class="ab-breadcrumb" id="ab-breadcrumb">
@@ -498,7 +498,7 @@ if ('serviceWorker' in navigator) {
           <button class="ab-btn ab-btn-del" onclick="eliminarReunion()">🗑 Eliminar</button>
         </div>
       </div>
- 
+
       <!-- SEARCH -->
       <div class="search-bar">
         <div class="search-wrap">
@@ -506,14 +506,14 @@ if ('serviceWorker' in navigator) {
           <input class="search" id="search" placeholder="Buscar en reuniones, objetivos, tareas…" oninput="renderMain()">
         </div>
       </div>
- 
+
       <!-- LISTA CASCADA -->
       <div class="main-list" id="main-list"></div>
- 
+
     </div>
   </div>
 </div>
- 
+
 <!-- MODAL REUNIÓN -->
 <div class="reu-overlay" id="reu-overlay">
   <div class="reu-modal" onclick="event.stopPropagation()">
@@ -540,7 +540,7 @@ if ('serviceWorker' in navigator) {
     </div>
   </div>
 </div>
- 
+
 <!-- MODAL EXPORTAR TAREAS -->
 <div id="modal-exportar" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:500;align-items:center;justify-content:center" onclick="cerrarModalExportar(event)">
   <div onclick="event.stopPropagation()" style="background:#fff;border-radius:14px;width:95%;max-width:860px;max-height:80vh;display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.3)">
@@ -570,7 +570,7 @@ if ('serviceWorker' in navigator) {
     </div>
   </div>
 </div>
- 
+
 <!-- MODAL ACTA -->
 <div class="modal-ov" id="modal" style="display:none" onclick="cerrarModal(event)">
   <div class="modal" onclick="e=>e.stopPropagation()">
@@ -609,13 +609,13 @@ if ('serviceWorker' in navigator) {
     </div>
   </div>
 </div>
- 
+
 <div class="toast" id="toast"></div>
- 
+
 <script type="module">
 // ── COLORES ──────────────────────────────────────────────────────────────────
 const COLS = ['#CC2929','#1E4D32','#935E0A','#1A3A6B','#5B2D8E','#0D6B6B','#8B4513','#1A5C6B'];
- 
+
 // ── ESTADO ───────────────────────────────────────────────────────────────────
 let S = {
   temas: [
@@ -703,17 +703,17 @@ let S = {
   filtros: { tema:'', estadoTarea:'', tipo:'', responsable:'', soloUltima:false },
   tabActiva: 'acta',
 };
- 
+
 // ── SIDEBAR ───────────────────────────────────────────────────────────────────
 function renderSidebar() {
   const hoy = today();
   let allTareas = [];
- 
+
   S.temas.forEach(t => {
     if (!t.reuniones.length) return;
     const ultimaReu = t.reuniones[0];
     const esPendiente = ta => (ta.estado||'ingresada') !== 'completada';
- 
+
     const collectT = (lista) => {
       (lista||[]).forEach(g => {
         (g.tareas||[]).forEach(ta => allTareas.push({...ta, tema: t.nombre}));
@@ -725,7 +725,7 @@ function renderSidebar() {
         });
       });
     };
- 
+
     // Nuevos temas: todas las tareas
     collectT(ultimaReu.temasNuevos);
     // Temas anteriores: solo tareas pendientes (compromisos vigentes)
@@ -744,7 +744,7 @@ function renderSidebar() {
     // Tareas globales de la reunión
     (ultimaReu.tareas||[]).forEach(ta => allTareas.push({...ta, tema: t.nombre}));
   });
- 
+
   const getEst = t => t.estado || (t.done ? 'completada' : 'ingresada');
   const pen  = allTareas.filter(t=>getEst(t)!=='completada').length;
   const venc = allTareas.filter(t=>getEst(t)!=='completada' && t.p < hoy).length;
@@ -753,7 +753,7 @@ function renderSidebar() {
   const prog = allTareas.filter(t=>getEst(t)==='en_progreso').length;
   const act  = allTareas.filter(t=>getEst(t)==='ingresada'||getEst(t)==='en_progreso').length;
   const total = allTareas.length;
- 
+
   // Stats
   document.getElementById('sb-stats').innerHTML = `
     <div class="stat" style="background:var(--surface2)"><div class="stat-num" style="color:var(--text)">${pen}</div><div class="stat-lbl" style="color:var(--text3)">Pendientes</div></div>
@@ -761,7 +761,7 @@ function renderSidebar() {
     <div class="stat" style="background:var(--green-l)"><div class="stat-num" style="color:var(--green)">${comp}</div><div class="stat-lbl" style="color:var(--green)">Completadas</div></div>
     <div class="stat" style="background:var(--amber-l)"><div class="stat-num" style="color:var(--amber)">${total}</div><div class="stat-lbl" style="color:var(--amber)">Total tareas</div></div>
   `;
- 
+
   // Filtro temas
   document.getElementById('fb-temas').innerHTML =
     `<div class="fopt ${!S.filtros.tema?'active':''}" onclick="setFiltro('tema','',this)"><span>Todos</span><span class="fcnt">${S.temas.reduce((a,t)=>a+t.reuniones.length,0)}</span></div>` +
@@ -772,7 +772,7 @@ function renderSidebar() {
         <span class="fcnt">${t.reuniones.length}</span>
       </div>`;
     }).join('');
- 
+
   // Filtro responsables
   const resps = [...new Set(allTareas.map(t=>t.r))].filter(Boolean);
   document.getElementById('fb-responsables').innerHTML =
@@ -783,7 +783,7 @@ function renderSidebar() {
         <span>${esc(r.split(' ')[0])}</span><span class="fcnt">${cnt}</span>
       </div>`;
     }).join('');
- 
+
   // Contadores estado
   document.getElementById('fc-est-all').textContent  = allTareas.length;
   document.getElementById('fc-est-act').textContent  = act;
@@ -792,19 +792,19 @@ function renderSidebar() {
   document.getElementById('fc-est-pen') && (document.getElementById('fc-est-pen').textContent = pen);
   document.getElementById('fc-est-venc').textContent = venc;
   document.getElementById('fc-est-comp').textContent = comp;
- 
+
   // Sincronizar estado visual del botón "solo última reunión"
   const btnUltima = document.getElementById('fopt-ultima');
   if (btnUltima) btnUltima.classList.toggle('active', S.filtros.soloUltima);
 }
- 
+
 function toggleFblock(el) {
   const body = el.parentElement.querySelector('.fblock-body');
   const arrow = el.querySelector('.fblock-arrow');
   body.classList.toggle('collapsed');
   arrow.style.transform = body.classList.contains('collapsed') ? 'rotate(-90deg)' : '';
 }
- 
+
 function clearAllFilters() {
   S.filtros = { tema:'', estadoTarea:'', tipo:'', responsable:'', soloUltima:false };
   // Reset búsqueda
@@ -821,13 +821,13 @@ function clearAllFilters() {
   renderAll();
   toast('Filtros limpiados');
 }
- 
+
 function toggleSoloUltima(el) {
   S.filtros.soloUltima = !S.filtros.soloUltima;
   el.classList.toggle('active', S.filtros.soloUltima);
   renderMain();
 }
- 
+
 function setFiltro(key, val, el) {
   S.filtros[key] = val;
   el.closest('.fblock-body').querySelectorAll('.fopt').forEach(o => o.classList.remove('active'));
@@ -835,21 +835,21 @@ function setFiltro(key, val, el) {
   renderSidebar();
   renderMain();
 }
- 
+
 // ── RENDER PRINCIPAL (cascada) ─────────────────────────────────────────────
 function renderMain() {
   const lista = document.getElementById('main-list');
   const q     = document.getElementById('search').value.toLowerCase().trim();
   const hoy   = today();
- 
+
   // filtrar temas
   let temasFilt = S.temas;
   if (S.filtros.tema) temasFilt = temasFilt.filter(t => String(t.id) === S.filtros.tema);
- 
+
   // construir HTML
   let html = '';
   let totalReus = 0;
- 
+
   temasFilt.forEach(tema => {
     // filtrar reuniones dentro del tema
     let reus = tema.reuniones.filter(r => {
@@ -879,10 +879,10 @@ function renderMain() {
     // Si filtro "solo última reunión" está activo, quedar solo con la primera (más reciente, ya ordenadas desc)
     if (S.filtros.soloUltima && reus.length > 0) reus = [reus[0]];
     if (!reus.length && S.filtros.tema !== String(tema.id) && (S.filtros.tipo || q || S.filtros.estadoTarea || S.filtros.responsable || S.filtros.soloUltima)) return;
- 
+
     totalReus += reus.length;
     const abierto = S.abiertos.temas[tema.id] !== false; // default abierto
- 
+
     html += `<div class="grupo" data-tid="${tema.id}" draggable="true"
       ondragstart="dragTemaStart(event,${tema.id})"
       ondragover="dragTemaOver(event)"
@@ -899,7 +899,7 @@ function renderMain() {
           <button style="background:var(--accent);color:#fff;border:none;border-radius:6px;padding:3px 10px;font-size:11px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif" onclick="nuevaReunion(${tema.id})">+ Reunión</button>
         </div>
       </div>`;
- 
+
     if (abierto) {
       reus.forEach(r => {
         const activa = S.reunionActiva === r.id; // both are now integers
@@ -930,7 +930,7 @@ function renderMain() {
         } else {
           badge = '';
         }
- 
+
         html += `<div class="subgrupo" data-rid="${r.id}" draggable="true"
           ondragstart="dragReuStart(event,${r.id},${tema.id})"
           ondragover="dragReuOver(event)"
@@ -954,17 +954,17 @@ function renderMain() {
     }
       html += `</div>`;
   });
- 
+
   if (!html) {
     html = `<div class="empty"><div class="empty-ico">🗓️</div><div class="empty-ttl">Sin resultados</div><div class="empty-sub">Prueba ajustando los filtros o creando un nuevo tema</div></div>`;
   }
   lista.innerHTML = html;
- 
+
   // action bar
   updateActionBar();
   renderSidebar();
 }
- 
+
 function matchSearch(r, tema, q) {
   if (!q) return true;
   // Campos básicos
@@ -977,7 +977,7 @@ function matchSearch(r, tema, q) {
   if ((r.participantes||[]).some(p => p.n?.toLowerCase().includes(q) || p.c?.toLowerCase().includes(q))) return true;
   // Tareas globales
   if ((r.tareas||[]).some(t => t.t?.toLowerCase().includes(q) || t.r?.toLowerCase().includes(q))) return true;
- 
+
   // Búsqueda recursiva en jerarquía (temasAnt + temasNuevos)
   function buscarEnNivel(obj) {
     try {
@@ -998,7 +998,7 @@ function matchSearch(r, tema, q) {
   if ((r.temasNuevos||[]).some(g => buscarEnNivel(g))) return true;
   return false;
 }
- 
+
 function matchTarea(t, hoy) {
   const _est = t.estado || (t.done ? 'completada' : 'ingresada');
   if (S.filtros.estadoTarea === 'activa'      && (_est === 'completada')) return false;
@@ -1009,7 +1009,7 @@ function matchTarea(t, hoy) {
   if (S.filtros.responsable && t.r !== S.filtros.responsable) return false;
   return true;
 }
- 
+
 // ── HELPER: select de responsable / participantes ─────────────────────────────
 // El pool de personas es GLOBAL (todas las reuniones de todos los temas), para
 // que al escribir un nombre siempre se proponga la misma persona ya registrada
@@ -1065,13 +1065,13 @@ function handleRespSelect(sel, inputId, rid) {
     }
   }
 }
- 
+
 // ── DETALLE (contenido del modal) ──────────────────────────────────────────
 function renderDetalle(r, tema) {
   const hoy = today();
   return `
   <!-- Fecha editable ahora vive en el header (reu-modal-fecha) -->
- 
+
   <!-- OBJETIVO -->
   <div style="margin-bottom:4px">
     <div style="padding:2px 0 3px">
@@ -1082,7 +1082,7 @@ function renderDetalle(r, tema) {
       onblur="upd(${r.id},'objetivo',this.value)"
     >${esc(r.objetivo)}</textarea>
   </div>
- 
+
   <!-- PARTICIPANTES -->
   <div style="margin-bottom:4px">
     <div style="display:flex;align-items:center;gap:8px;padding:2px 0 3px">
@@ -1097,7 +1097,7 @@ function renderDetalle(r, tema) {
       <option value="__nuevo__">+ Nueva persona…</option>
     </select>
   </div>
- 
+
   <!-- TEMAS DE LA REUNIÓN ANTERIOR -->
   <div style="margin-bottom:4px">
     <div style="display:flex;align-items:center;justify-content:space-between;padding:2px 0 3px">
@@ -1108,7 +1108,7 @@ function renderDetalle(r, tema) {
     </div>
     <div id="temas-ant-${r.id}">${renderTemasJerarquia(r,'ant')}</div>
   </div>
- 
+
   <!-- NUEVOS TEMAS DE LA REUNIÓN -->
   <div style="margin-bottom:4px">
     <div style="display:flex;align-items:center;justify-content:space-between;padding:2px 0 3px">
@@ -1117,7 +1117,7 @@ function renderDetalle(r, tema) {
     </div>
     <div id="temas-nuevos-${r.id}">${renderTemasJerarquia(r,'nuevos')}</div>
   </div>
- 
+
   <!-- COMENTARIOS GENERALES -->
   <div style="margin-bottom:4px">
     <div style="padding:2px 0 3px">
@@ -1126,7 +1126,7 @@ function renderDetalle(r, tema) {
     <textarea class="fi ta" id="modal-comentgeneral-field" style="min-height:80px" placeholder="Observaciones generales, acuerdos verbales, notas libres…" onblur="upd(${r.id},'comentGeneral',this.value)">${esc(r.comentGeneral)}</textarea>
   </div>`;
 }
- 
+
 function renderParts(r) {
   if (!r.participantes.length) return `<div style="font-size:11px;color:var(--text3);padding:2px 0">Sin participantes</div>`;
   return r.participantes.map((p,i)=>`
@@ -1149,7 +1149,7 @@ function renderParts(r) {
       <button class="del-btn" onclick="delPart(${r.id},${i})">✕</button>
     </div>`).join('');
 }
- 
+
 // ── VINCULACIÓN REUNIÓN ANTERIOR ──────────────────────────────────────────────
 function renderVinculacion(r) {
   const tema = S.temas.find(t => t.reuniones.some(x => x.id === r.id));
@@ -1165,19 +1165,19 @@ function renderVinculacion(r) {
     <option value="">Sin vincular</option>${opts}
   </select>`;
 }
- 
+
 // Helper: obtener texto de acuerdo (puede ser string o {txt, _heredado})
 function acTxt(ac) { return typeof ac === 'object' ? (ac.txt||'') : (ac||''); }
 function acHeredado(ac) { return typeof ac === 'object' ? ac._heredado : false; }
- 
+
 function importarTemasPendientes(antId) {
   const ant = getReu(antId); if (!ant) return [];
   const fuente = [...(ant.temasAnt||[]), ...(ant.temasNuevos||[])];
   const clonado = JSON.parse(JSON.stringify(fuente));
- 
+
   const esPendiente = t => (t.estado||'ingresada') !== 'completada';
   const tieneAcuerdos = obj => (obj.acuerdos||[]).length > 0;
- 
+
   // Procesar cada nivel: tareas → filtrar pendientes, acuerdos → mostrar una vez (marcar _yaMostrado)
   const procesarObj = obj => {
     obj.tareas = (obj.tareas||[]).filter(esPendiente);
@@ -1190,7 +1190,7 @@ function importarTemasPendientes(antId) {
       .filter(ac => !acHeredado(ac))
       .map(ac => ({ txt: acTxt(ac), _heredado: true }));
   };
- 
+
   clonado.forEach(g => {
     procesarObj(g);
     (g.subgrupos||[]).forEach(sg => {
@@ -1206,13 +1206,13 @@ function importarTemasPendientes(antId) {
       sg.tareas.length > 0 || (sg.acuerdos||[]).length > 0 || sg.apuntes || sg.comentario || sg.sub2.length > 0
     );
   });
- 
+
   // Filtrar grupos
   return clonado.filter(g =>
     g.tareas.length > 0 || (g.acuerdos||[]).length > 0 || g.apuntes || g.comentario || g.subgrupos.length > 0
   );
 }
- 
+
 function vincularReuAnterior(rid, anteriorId) {
   const r = getReu(rid); if (!r) return;
   r.reunionAnteriorId = anteriorId ? parseInt(anteriorId) : null;
@@ -1228,7 +1228,7 @@ function vincularReuAnterior(rid, anteriorId) {
   reRenderTemas(rid);
   guardarEstado();
 }
- 
+
 // ── RENDER JERARQUÍA ──────────────────────────────────────────────────────────
 function renderTemasJerarquia(r, tipo) {
   let lista = tipo === 'ant' ? (r.temasAnt||[]) : (r.temasNuevos||[]);
@@ -1250,9 +1250,9 @@ function renderTemasJerarquia(r, tipo) {
   if (!lista.length) return tipo === 'ant' ? '' : `<div style="font-size:11px;color:var(--text3);padding:4px 0">Sin temas. Usa "+ Grupo" para agregar.</div>`;
   return lista.map((grupo, gi) => renderGrupo(r.id, tipo, grupo, gi)).join('');
 }
- 
- 
- 
+
+
+
 // ── APUNTES (editor rico por nivel) ───────────────────────────────────────────
 function renderApuntesEditor(rid, tipo, gi, si, s2i, obj) {
   const key = `${rid}-${tipo}-${gi}-${si}-${s2i}`;
@@ -1286,11 +1286,11 @@ function renderApuntesEditor(rid, tipo, gi, si, s2i, obj) {
       >${html}</div>
     </div>`;
 }
- 
+
 function renderApuntesViewer(rid, tipo, gi, si, s2i, obj) {
   return renderApuntesEditor(rid, tipo, gi, si, s2i, obj);
 }
- 
+
 function mostrarApuntesEditor(key, rid, tipo, gi, si, s2i, obj) {
   // Si ya existe el wrap, solo hacer focus
   const existing = document.getElementById(`wrap-${key}`);
@@ -1331,13 +1331,13 @@ function mostrarApuntesEditor(key, rid, tipo, gi, si, s2i, obj) {
   // Focus con pequeño delay
   setTimeout(() => { wrap.querySelector('.apuntes-editor')?.focus(); }, 30);
 }
- 
+
 function apuntesFocus(el) {
   const wrap = el.closest('.apuntes-wrap');
   const toolbar = wrap?.querySelector('.apuntes-toolbar');
   if (toolbar) toolbar.classList.add('visible');
 }
- 
+
 function apuntesBlur(el) {
   guardarApuntes(el);
   // Ocultar toolbar con delay para permitir clicks en botones
@@ -1351,7 +1351,7 @@ function apuntesBlur(el) {
     if (isEmpty) wrap?.remove();
   }, 200);
 }
- 
+
 function apuntesIndent(btn, dir) {
   // Find the editor in the same apuntes-wrap
   const wrap = btn.closest('.apuntes-wrap');
@@ -1366,7 +1366,7 @@ function apuntesIndent(btn, dir) {
   if (dir > 0) document.execCommand('indent');
   else document.execCommand('outdent');
 }
- 
+
 function guardarApuntes(el) {
   if (S.modoLectura) return; // No guardar en modo lectura
   const rid = parseInt(el.dataset.rid);
@@ -1382,7 +1382,7 @@ function guardarApuntes(el) {
   if (btn) btn.style.display = obj.apuntes ? 'none' : '';
   guardarEstado();
 }
- 
+
 function abrirComentario(rid, tipo, gi, si, s2i) {
   const key = `${rid}-${tipo}-${gi}-${si}-${s2i}`;
   const obj = getObjeto(rid, tipo, gi, si, s2i); if (!obj) return;
@@ -1391,7 +1391,7 @@ function abrirComentario(rid, tipo, gi, si, s2i) {
   const btn = document.getElementById(`btn-coment-${key}`);
   if (btn) btn.style.display = 'none';
 }
- 
+
 // ── HELPER: render acuerdos + tareas en cualquier nivel ───────────────────────
 // Solo acuerdos (cuando el subgrupo tiene sub2 — las tareas van en el nivel inferior)
 function renderAcuerdosSoloHTML(rid, tipo, gi, si, s2i, obj) {
@@ -1415,7 +1415,7 @@ function renderAcuerdosSoloHTML(rid, tipo, gi, si, s2i, obj) {
       </div>`).join('')}
   `;
 }
- 
+
 function renderAcuerdosTareasHTML(rid, tipo, gi, si, s2i, obj) {
   const hoy = today();
   const editKeyBase = `${rid}-${tipo}-${gi}-${si}-${s2i}`;
@@ -1438,7 +1438,7 @@ function renderAcuerdosTareasHTML(rid, tipo, gi, si, s2i, obj) {
         <button class="th-del-btn" onclick="delAcuerdo(${rid},'${tipo}',${gi},${si},${s2i},${ai})">✕</button>
       </div>`).join('')}
   `;
- 
+
   // Apuntes: NO se renderizan aquí — el nivel sub2 ya los renderiza por su cuenta
   // (renderSub2 llama a renderApuntesEditor antes de llamar a esta función).
   // Renderizarlos también acá duplicaba el bloque de comentario.
@@ -1483,7 +1483,7 @@ function renderAcuerdosTareasHTML(rid, tipo, gi, si, s2i, obj) {
   `;
   return acuerdosHTML + tareasHTML;
 }
- 
+
 // NIVEL 1 — Grupo
 function renderGrupo(rid, tipo, grupo, gi) {
   const abierto = grupo._open !== false;
@@ -1530,7 +1530,7 @@ function renderGrupo(rid, tipo, grupo, gi) {
     </div>` : ''}
   </div>`;
 }
- 
+
 // NIVEL 2 — Subgrupo
 function renderSubgrupo(rid, tipo, gi, sg, si) {
   const abierto = sg._open !== false;
@@ -1565,7 +1565,7 @@ function renderSubgrupo(rid, tipo, gi, sg, si) {
     </div>` : ''}
   </div>`;
 }
- 
+
 // NIVEL 3 — Subgrupo 2 (nivel final: acuerdos + tareas)
 function renderSub2(rid, tipo, gi, si, s2, s2i) {
   const abierto = s2._open !== false;
@@ -1594,7 +1594,7 @@ function renderSub2(rid, tipo, gi, si, s2, s2i) {
     </div>` : ''}
   </div>`;
 }
- 
+
 // ── HELPERS JERARQUÍA ─────────────────────────────────────────────────────────
 function getLista(r, tipo) { return tipo==='ant' ? r.temasAnt : r.temasNuevos; }
 function getObjeto(rid, tipo, gi, si, s2i) {
@@ -1610,13 +1610,13 @@ function getObjeto(rid, tipo, gi, si, s2i) {
 function getS2(rid, tipo, gi, si, s2i) {
   return getObjeto(rid, tipo, gi, si, s2i);
 }
- 
+
 function reRenderTemas(rid, tipo) {
   const r = getReu(rid); if (!r) return;
   if (tipo === 'ant' || !tipo) { const el=document.getElementById(`temas-ant-${rid}`); if(el) el.innerHTML=renderTemasJerarquia(r,'ant'); }
   if (tipo === 'nuevos' || !tipo) { const el=document.getElementById(`temas-nuevos-${rid}`); if(el) el.innerHTML=renderTemasJerarquia(r,'nuevos'); }
 }
- 
+
 function toggleTH(hdr) {
   const parent = hdr.parentElement;
   const bodies = parent.children;
@@ -1628,10 +1628,10 @@ function toggleTH(hdr) {
   body.style.display = hidden ? '' : 'none';
   if (arrow) arrow.classList.toggle('closed', !hidden);
 }
- 
+
 // ── AGREGAR NIVELES ───────────────────────────────────────────────────────────
 function mkId() { return 'id'+Date.now()+Math.random().toString(36).slice(2,5); }
- 
+
 function addTemaAnt(rid) {
   const r=getReu(rid); if(!r) return;
   if(!r.temasAnt) r.temasAnt=[];
@@ -1646,14 +1646,14 @@ function addTemaNuevo(rid) {
   reRenderTemas(rid,'nuevos');
   guardarEstado();
 }
- 
+
 // gi>=0, si===-1 → agrega subgrupo al grupo gi
 // gi>=0, si>=0, s2i===-1 → agrega sub2 al subgrupo si
 function addNivel(rid, tipo, gi, si, s2i) {
   if (S.modoLectura) return;
   const r=getReu(rid); if(!r) return;
   const lista=getLista(r,tipo);
- 
+
   if (si === -1) {
     // Agregando Subgrupo al grupo gi — verificar si el grupo ya tiene tareas
     const g = lista[parseInt(gi)];
@@ -1689,7 +1689,7 @@ function addNivel(rid, tipo, gi, si, s2i) {
       return;
     }
   }
- 
+
   if (si !== -1) {
     // Agregando Subgrupo 2 al subgrupo si
     const sg = lista[parseInt(gi)]?.subgrupos[parseInt(si)];
@@ -1698,7 +1698,7 @@ function addNivel(rid, tipo, gi, si, s2i) {
       const prev = document.getElementById('modal-add-sub2');
       if (prev) prev.remove();
       const nTareas = sg.tareas.length;
- 
+
       const el = document.createElement('div');
       el.id = 'modal-add-sub2';
       el.style.cssText = 'position:fixed;inset:0;display:flex;align-items:center;justify-content:center;z-index:9999;background:rgba(0,0,0,.35)';
@@ -1726,10 +1726,10 @@ function addNivel(rid, tipo, gi, si, s2i) {
       return;
     }
   }
- 
+
   _crearSubNivel(rid, tipo, gi, si);
 }
- 
+
 function confirmarAddSubgrupo(rid, tipo, gi, accion) {
   document.getElementById('modal-add-sub2')?.remove();
   const r=getReu(rid); if(!r) return;
@@ -1744,13 +1744,13 @@ function confirmarAddSubgrupo(rid, tipo, gi, accion) {
   reRenderTemas(rid,tipo);
   guardarEstado();
 }
- 
+
 function confirmarAddSub2(rid, tipo, gi, si, accion) {
   document.getElementById('modal-add-sub2')?.remove();
   const r=getReu(rid); if(!r) return;
   const lista=getLista(r,tipo);
   const sg = lista[gi].subgrupos[si];
- 
+
   const nuevoSub2 = {
     id: mkId(),
     nombre: '',
@@ -1764,7 +1764,7 @@ function confirmarAddSub2(rid, tipo, gi, si, accion) {
   reRenderTemas(rid,tipo);
   guardarEstado();
 }
- 
+
 function _crearSubNivel(rid, tipo, gi, si) {
   const r=getReu(rid); if(!r) return;
   const lista=getLista(r,tipo);
@@ -1778,7 +1778,7 @@ function _crearSubNivel(rid, tipo, gi, si) {
   reRenderTemas(rid,tipo);
   guardarEstado();
 }
- 
+
 // ── ELIMINAR NIVELES ──────────────────────────────────────────────────────────
 function delNivel(rid, tipo, gi, si, s2i) {
   const r=getReu(rid); if(!r) return;
@@ -1789,7 +1789,7 @@ function delNivel(rid, tipo, gi, si, s2i) {
   reRenderTemas(rid,tipo);
   guardarEstado();
 }
- 
+
 // ── ACTUALIZAR NOMBRES ────────────────────────────────────────────────────────
 function updNombreTH(rid, tipo, gi, si, s2i, val) {
   if (S.modoLectura) return;
@@ -1802,7 +1802,7 @@ function updNombreTH(rid, tipo, gi, si, s2i, val) {
   } catch(e){}
   guardarEstado();
 }
- 
+
 // ── ACUERDOS ──────────────────────────────────────────────────────────────────
 function addAcuerdo(rid, tipo, gi, si, s2i) {
   if (S.modoLectura) return;
@@ -1831,7 +1831,7 @@ function delAcuerdo(rid, tipo, gi, si, s2i, ai) {
   reRenderTemas(rid,tipo);
   guardarEstado();
 }
- 
+
 // ── TAREAS EN SUB2 ────────────────────────────────────────────────────────────
 // IDs (string) de tareas actualmente en modo edición inline (lápiz). No se
 // persiste — es solo estado de UI en memoria, se limpia al guardar/cancelar.
@@ -1848,7 +1848,7 @@ function alertaCentrada(campos) {
   // Eliminar alerta previa si existe
   const prev = document.getElementById('alerta-centrada');
   if (prev) prev.remove();
- 
+
   const lista = campos.map(c => `<li style="padding:3px 0">• ${c}</li>`).join('');
   const el = document.createElement('div');
   el.id = 'alerta-centrada';
@@ -1864,7 +1864,7 @@ function alertaCentrada(campos) {
   el.addEventListener('click', e => { if(e.target===el) el.remove(); });
   document.body.appendChild(el);
 }
- 
+
 function saveS2Task(rid,tipo,gi,si,s2i){
   if (S.modoLectura) return;
   const r=getReu(rid); if(!r) return;
@@ -1901,7 +1901,7 @@ function setEstadoTask(rid,tid,estado){
   document.getElementById(`tasks-${rid}`).innerHTML=renderTasks(r);
   renderSidebar(); guardarEstado();
 }
- 
+
 function toggleS2Task(rid,tipo,gi,si,s2i,tid){
   tid=String(tid); // task ids stored as strings from mkId
   const s2=getS2(rid,tipo,gi,si,s2i); if(!s2) return;
@@ -1949,7 +1949,7 @@ function guardarEditS2Task(editKey,rid,tipo,gi,si,s2i,tid){
   toast('Tarea actualizada');
   guardarEstado();
 }
- 
+
 function renderTasks(r) {
   const hoy = today();
   if (!r.tareas.length) return `<div style="font-size:11px;color:var(--text3);padding:2px 0">Sin tareas registradas</div>`;
@@ -1980,14 +1980,14 @@ function renderTasks(r) {
     </div>`;
   }).join('');
 }
- 
+
 // ── ACCIONES ──────────────────────────────────────────────────────────────────
 function toggleTema(id) {
   id=parseInt(id);
   S.abiertos.temas[id] = S.abiertos.temas[id] === false ? true : false;
   renderMain();
 }
- 
+
 function toggleSelReunion(rid, tid, cb) {
   const _rid = parseInt(rid), _tid = parseInt(tid);
   if (!cb) return;
@@ -2006,12 +2006,12 @@ function toggleSelReunion(rid, tid, cb) {
   }
   updateActionBar();
 }
- 
+
 function selReunion(rid, tid) {
   const _rid = parseInt(rid), _tid = parseInt(tid);
   S.reunionActiva = _rid;
   S.temaActivo    = _tid;
- 
+
   document.querySelectorAll('.sgrp-hdr input[type=checkbox]').forEach(el => el.checked = false);
   document.querySelectorAll('.sgrp-hdr').forEach(el => el.classList.remove('active'));
   const row = document.querySelector(`[data-rid="${_rid}"] .sgrp-hdr`);
@@ -2019,13 +2019,13 @@ function selReunion(rid, tid) {
   const tema = S.temas.find(t => t.id === _tid);
   const r    = getReu(_rid);
   if (!r || !tema) return;
- 
+
   // Determinar si es la reunión más reciente del tema
   const ultimaId = tema.reuniones[0]?.id; // ya están ordenadas desc
   const esUltima = _rid === ultimaId;
   S.modoLectura = !esUltima;
   window._modalRid = _rid; // setear ANTES del render para que el filtro lo use
- 
+
   document.getElementById('reu-modal-title').textContent = `${tema.nombre} · ${r.titulo}`;
   const fechaInput = document.getElementById('reu-modal-fecha');
   if (fechaInput) {
@@ -2047,7 +2047,7 @@ function selReunion(rid, tid) {
     const obj = document.getElementById('modal-objetivo-field');
     if (obj) { obj.style.height = 'auto'; obj.style.height = obj.scrollHeight + 'px'; }
   }, 0);
- 
+
   // Actualizar footer según si es la última o no
   const footer = document.getElementById('reu-modal-footer');
   if (esUltima) {
@@ -2057,7 +2057,7 @@ function selReunion(rid, tid) {
       <button onclick="solicitarEdicionHistorica()" style="background:var(--surface2);color:var(--text2);border:1px solid var(--border);border-radius:8px;padding:10px 20px;font-size:13px;font-weight:500;cursor:pointer;font-family:'DM Sans',sans-serif">✏ Editar</button>
       <button onclick="cerrarReuModal()" style="background:var(--accent);color:#fff;border:none;border-radius:8px;padding:10px 28px;font-size:13px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif">✕ Cerrar</button>`;
   }
- 
+
   // Si es solo lectura, deshabilitar inputs
   if (!esUltima) {
     setTimeout(() => {
@@ -2068,11 +2068,11 @@ function selReunion(rid, tid) {
       });
     }, 50);
   }
- 
+
   document.getElementById('reu-overlay').classList.add('open');
   updateActionBar();
 }
- 
+
 function solicitarEdicionHistorica() {
   const prev = document.getElementById('modal-edicion-historica');
   if (prev) prev.remove();
@@ -2094,7 +2094,7 @@ function solicitarEdicionHistorica() {
     </div>`;
   document.body.appendChild(el);
 }
- 
+
 function habilitarEdicionHistorica() {
   document.getElementById('modal-edicion-historica')?.remove();
   S.modoLectura = false;
@@ -2110,7 +2110,7 @@ function habilitarEdicionHistorica() {
     <div style="font-size:11px;color:var(--amber);margin-right:auto;align-self:center">⚠ Editando reunión histórica</div>
     <button class="dbt dbt-sec" onclick="guardarYCerrar()" style="background:var(--accent);color:#fff;border:none;padding:10px 28px;font-size:13px;font-weight:600">💾 Guardar y cerrar</button>`;
 }
- 
+
 function cerrarReuModal() {
   const focused = document.activeElement;
   if (focused && (focused.tagName === 'INPUT' || focused.tagName === 'TEXTAREA')) {
@@ -2122,7 +2122,7 @@ function cerrarReuModal() {
   if (!S.modoLectura) guardarAhora();
   S.modoLectura = false;
 }
- 
+
 function guardarYCerrar() {
   const focused = document.activeElement;
   if (focused && (focused.tagName === 'INPUT' || focused.tagName === 'TEXTAREA')) {
@@ -2148,7 +2148,7 @@ function guardarYCerrar() {
   renderAll();
   guardarAhora().then(() => toast('✓ Guardado')).catch(() => guardarEstado());
 }
- 
+
 function updateActionBar() {
   const bar = document.getElementById('action-bar');
   const bc  = document.getElementById('ab-breadcrumb');
@@ -2172,7 +2172,7 @@ function updateActionBar() {
     acts.innerHTML = '';
   }
 }
- 
+
 function updNombre(rid, val) {
   if (S.modoLectura) return;
   const reu = getReu(rid); if (!reu) return;
@@ -2188,7 +2188,7 @@ function updNombre(rid, val) {
   updateActionBar();
   guardarEstado();
 }
- 
+
 function updFechaReunion(rid, val) {
   if (S.modoLectura) return;
   const reu = getReu(rid); if (!reu || !val) return;
@@ -2200,7 +2200,7 @@ function updFechaReunion(rid, val) {
   updateActionBar();
   guardarEstado();
 }
- 
+
 function upd(rid, campo, val) {
   if (S.modoLectura) return;
   const reu = getReu(rid); if (!reu) return;
@@ -2214,14 +2214,14 @@ function upd(rid, campo, val) {
   }
   guardarEstado();
 }
- 
+
 function toggleSelectParticipante(rid) {
   const sel = document.getElementById(`sel-part-${rid}`);
   if (!sel) return;
   sel.style.display = sel.style.display === 'none' ? 'block' : 'none';
   if (sel.style.display === 'block') sel.focus();
 }
- 
+
 function refreshPartSelect(rid) {
   const reu = getReu(rid); if (!reu) return;
   const parts = getRespOptions(rid);
@@ -2233,12 +2233,12 @@ function refreshPartSelect(rid) {
       `<option value="__nuevo__">+ Nueva persona…</option>`;
   }
 }
- 
+
 function addPartFromSelect(rid, sel) {
   const val = sel.value;
   if (!val) return;
   const reu = getReu(rid); if (!reu) return;
- 
+
   if (val === '__nuevo__') {
     sel.value = '';
     // Mostrar mini formulario inline
@@ -2293,7 +2293,7 @@ function confirmarNuevoPart(rid) {
   guardarEstado();
   toast('Participante agregado');
 }
- 
+
 function toggleAddPart(rid) {
   const f = document.getElementById(`part-form-${rid}`);
   f.style.display = f.style.display==='none' ? 'flex' : 'none';
@@ -2332,7 +2332,7 @@ function delPart(rid, i) {
   refreshPartSelect(rid);
   guardarEstado();
 }
- 
+
 function toggleNT_Task(rid){
   const f=document.getElementById(`ntf-${rid}`);
   f.style.display=f.style.display==='none'?'flex':'none';
@@ -2414,7 +2414,7 @@ function guardarEditTask(editKey,rid,tid){
   toast('Tarea actualizada');
   guardarEstado();
 }
- 
+
 function agregarTema(){
   const n=prompt('Nombre del nuevo tema:');if(!n?.trim())return;
   const id=Date.now();const color=COLS[S.temas.length%COLS.length];
@@ -2476,13 +2476,13 @@ function eliminarReunion(){
   cerrarReuModal();
   renderAll();toast('Reunión eliminada');
 }
- 
+
 // ── ACTA ──────────────────────────────────────────────────────────────────────
 function abrirActa(){
   const r=getReuActiva();if(!r){toast('Selecciona una reunión');return;}
   const tema=S.temas.find(t=>t.reuniones.some(r2=>r2.id===r.id));
   document.getElementById('modal-sub').textContent=`${tema?.nombre} · ${r.titulo}${r.nombre?' — '+r.nombre:''} · ${fmt(r.fecha)}`;
- 
+
   // Mostrar campo "Generado por" solo si no hay líder definido
   const lider = r.participantes.find(p=>p.lider);
   const fallbackDiv = document.getElementById('lider-fallback');
@@ -2493,7 +2493,7 @@ function abrirActa(){
   } else {
     fallbackDiv.style.display = 'none';
   }
- 
+
   document.getElementById('acta-txt').textContent=genActa(r,tema);
   genCorreo(r,tema);
   document.getElementById('modal').style.display='flex';
@@ -2512,7 +2512,7 @@ function genActa(r,tema){
   let s=`ACTA DE REUNIÓN\n${linea}\n\nTema:      ${tema?.nombre}\nReunión:   ${r.titulo}${nombreReu}\nFecha:     ${fmtL(r.fecha)}\nLíder:     ${liderNombre}\n`;
   if(r.participantes.length){s+=`\nParticipantes:\n`;r.participantes.forEach(p=>{s+=`  ${p.n}${p.c?' — '+p.c:''}${p.lider?'  (LÍDER)':''}\n`;});}
   s+=`\n${linea}\nOBJETIVO\n\n${r.objetivo||'(sin objetivo definido)'}\n`;
- 
+
   // Función para imprimir el contenido de un nivel (apuntes + acuerdos + tareas)
   function printNivelContenido(obj, indent) {
     let out = '';
@@ -2528,7 +2528,7 @@ function genActa(r,tema){
     });
     return out;
   }
- 
+
   // Función para imprimir jerarquía completa: Grupo > Subgrupo > Subgrupo2
   function printJerarquia(lista) {
     let out = '';
@@ -2546,11 +2546,11 @@ function genActa(r,tema){
     });
     return out;
   }
- 
+
   if(r.temasAnt?.length){s+=`\n${linea}\nTEMAS DE LA REUNIÓN ANTERIOR\n${printJerarquia(r.temasAnt)}`;}
   if(r.temasNuevos?.length){s+=`\n${linea}\nNUEVOS TEMAS DE LA REUNIÓN\n${printJerarquia(r.temasNuevos)}`;}
   if(r.comentGeneral){s+=`\n${linea}\nCOMENTARIOS GENERALES\n\n${r.comentGeneral}\n\n`;}
- 
+
   // Resumen de tareas y compromisos (todas las tareas de todos los niveles)
   const todasTareas = [];
   function recolectarTareas(lista) {
@@ -2622,7 +2622,7 @@ function toggleMenuApp() {
     }, 10);
   }
 }
- 
+
 function importarJSON() {
   const input = document.createElement('input');
   input.type = 'file';
@@ -2646,7 +2646,7 @@ function importarJSON() {
   };
   input.click();
 }
- 
+
 function exportarTareasExcel(){
   // Abrir modal de selección
   const lista = document.getElementById('exportar-lista');
@@ -2663,23 +2663,23 @@ function exportarTareasExcel(){
       cb.type = 'checkbox'; cb.checked = true;
       cb.dataset.rid = r.id; cb.dataset.tid = tema.id;
       cb.style.cssText = 'width:15px;height:15px;accent-color:var(--accent);cursor:pointer';
- 
+
       const colTema = document.createElement('span');
       colTema.style.cssText = 'font-size:13px;font-weight:600;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding-right:8px';
       colTema.textContent = tema.nombre;
- 
+
       const colNum = document.createElement('span');
       colNum.style.cssText = 'font-size:13px;color:var(--text2);padding-right:8px';
       colNum.textContent = r.titulo;
- 
+
       const colNombre = document.createElement('span');
       colNombre.style.cssText = 'font-size:13px;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding-right:8px';
       colNombre.textContent = r.nombre || '(sin nombre)';
- 
+
       const colFecha = document.createElement('span');
       colFecha.style.cssText = 'font-size:13px;color:var(--text2);font-family:"DM Mono",monospace';
       colFecha.textContent = fmt(r.fecha);
- 
+
       row.appendChild(cb);
       row.appendChild(colTema);
       row.appendChild(colNum);
@@ -2689,21 +2689,21 @@ function exportarTareasExcel(){
   });
   document.getElementById('modal-exportar').style.display = 'flex';
 }
- 
+
 function selTodas(val) {
   document.querySelectorAll('#exportar-lista input[type=checkbox]').forEach(cb => cb.checked = val);
 }
- 
+
 function cerrarModalExportar(e) {
   if (e && e.target !== document.getElementById('modal-exportar')) return;
   document.getElementById('modal-exportar').style.display = 'none';
 }
- 
+
 function confirmarExportarExcel() {
   const seleccionados = [...document.querySelectorAll('#exportar-lista input[type=checkbox]:checked')];
   const ridsSelec = seleccionados.map(cb => parseInt(cb.dataset.rid));
   if (!ridsSelec.length) { toast('Selecciona al menos una reunión'); return; }
- 
+
   const filas = [];
   const _getEst = t => {
     const e = t.estado || (t.done ? 'completada' : 'ingresada');
@@ -2721,7 +2721,7 @@ function confirmarExportarExcel() {
       });
     });
   }
- 
+
   S.temas.forEach(tema => {
     tema.reuniones.forEach(r => {
       if (!ridsSelec.includes(r.id)) return;
@@ -2732,9 +2732,9 @@ function confirmarExportarExcel() {
       (r.tareas||[]).forEach(t => filas.push({ origen, tarea: t, grupo: '', subgrupo: '' }));
     });
   });
- 
+
   if (!filas.length) { toast('Las reuniones seleccionadas no tienen tareas'); return; }
- 
+
   // Helper: convierte string YYYY-MM-DD a objeto Date local (sin desfase de timezone)
   function toDateObj(str) {
     if (!str) return '';
@@ -2742,7 +2742,7 @@ function confirmarExportarExcel() {
     if (!y || !m || !d) return str;
     return new Date(y, m - 1, d);
   }
- 
+
   const data = [['codigo','usuario','lista','titulo','grupo','subgrupo','responsable','inicio','limite','prioridad','estado','origen','notas','starred']];
   filas.forEach(({ origen, tarea: t, grupo, subgrupo }) => {
     const notas = [grupo, subgrupo].filter(Boolean).join(' / ');
@@ -2763,11 +2763,11 @@ function confirmarExportarExcel() {
       'No'             // starred
     ]);
   });
- 
+
   const wb = window.XLSX.utils.book_new();
   // cellDates:true para que SheetJS trate los objetos Date como celdas de fecha
   const ws = window.XLSX.utils.aoa_to_sheet(data, { cellDates: true });
- 
+
   // Aplicar formato dd-mm-yyyy a la columna "limite" (índice 8)
   const limiteCol = 8;
   const range = window.XLSX.utils.decode_range(ws['!ref']);
@@ -2777,7 +2777,7 @@ function confirmarExportarExcel() {
       ws[cellAddr].z = 'dd-mm-yyyy';
     }
   }
- 
+
   // Auto-ajustar ancho de columnas
   const colWidths = data[0].map((_, ci) => ({
     wch: Math.min(80, Math.max(10, ...data.map(row => {
@@ -2791,12 +2791,12 @@ function confirmarExportarExcel() {
   document.getElementById('modal-exportar').style.display = 'none';
   toast(`✓ Exportadas ${filas.length} tareas`);
 }
- 
+
 function exportar(){
   const a=document.createElement('a');a.href=URL.createObjectURL(blob);
   a.download=`reuniones_rvc_${today()}.json`;a.click();toast('Exportado');
 }
- 
+
 // ── UTILS ─────────────────────────────────────────────────────────────────────
 function getReu(rid){ const id=parseInt(rid); return S.temas.flatMap(t=>t.reuniones).find(r=>r.id===id)||null; }
 function getReuActiva(){ return S.reunionActiva?getReu(S.reunionActiva):null; }
@@ -2814,10 +2814,10 @@ function toast(msg){
   setTimeout(()=>t.classList.remove('show'),2000);
 }
 function renderAll(){ renderSidebar(); renderMain(); }
- 
+
 // ── DRAG & DROP TEMAS ─────────────────────────────────────────────────────────
 let _dragTemaId = null;
- 
+
 // El arrastre de filas (grupo/subgrupo/subgrupo2/tema/reunión) debe funcionar
 // tomando cualquier parte del encabezado, EXCEPTO si el gesto arrancó dentro del
 // input de nombre (para no interrumpir la selección de texto). _dragBlocked se
@@ -2829,10 +2829,10 @@ document.addEventListener('mouseup', () => { _dragBlocked = false; });
 // desde el HTML no tocaba esta variable. Por eso se necesita esta función
 // exportada a window para que el bloqueo realmente tome efecto.
 function bloquearDrag(e) { e.stopPropagation(); _dragBlocked = true; }
- 
+
 // ── DRAG & DROP JERARQUÍA DE TEMAS ────────────────────────────────────────────
 let _dragNivel = null;
- 
+
 function dragNivelStart(e, nivel, rid, tipo, gi, si, s2i) {
   if (_dragBlocked) { e.preventDefault(); return; }
   _dragNivel = { nivel, rid: parseInt(rid), tipo, gi: parseInt(gi), si: parseInt(si), s2i: parseInt(s2i) };
@@ -2857,7 +2857,7 @@ function dragNivelDrop(e, nivel, rid, tipo, gi, si, s2i) {
   const lista = getLista(r, tipo);
   const fromGi = _dragNivel.gi, fromSi = _dragNivel.si, fromS2i = _dragNivel.s2i;
   const toGi = parseInt(gi), toSi = parseInt(si), toS2i = parseInt(s2i);
- 
+
   if (nivel === 'grupo' && fromGi !== toGi) {
     // Solo reordena dentro de la misma lista raíz
     const items = lista.splice(fromGi, 1);
@@ -2877,7 +2877,7 @@ function dragNivelDrop(e, nivel, rid, tipo, gi, si, s2i) {
   reRenderTemas(rid, tipo);
   guardarEstado();
 }
- 
+
 function dragTemaStart(e, tid) {
   if (_dragBlocked) { e.preventDefault(); return; }
   _dragTemaId = tid;
@@ -2906,11 +2906,11 @@ function dragTemaDrop(e, targetTid) {
   _dragTemaId = null;
   renderAll();
 }
- 
+
 // ── DRAG & DROP REUNIONES ──────────────────────────────────────────────────────
 let _dragReuId = null;
 let _dragReuTemaId = null;
- 
+
 function dragReuStart(e, rid, tid) {
   if (_dragBlocked) { e.preventDefault(); return; }
   _dragReuId = rid; _dragReuTemaId = tid;
@@ -2940,7 +2940,7 @@ function dragReuDrop(e, targetRid, targetTid) {
   _dragReuId = null;
   renderAll();
 }
- 
+
 // ── EXPONER FUNCIONES AL SCOPE GLOBAL (requerido por type="module") ──────────
 Object.assign(window, {
   agregarTema, renombrarTema, nuevaReunion, eliminarReunion,
@@ -2965,14 +2965,14 @@ Object.assign(window, {
   dragTemaStart, dragTemaOver, dragTemaLeave,
   dragNivelStart, dragNivelOver, dragNivelLeave, dragNivelDrop, bloquearDrag,
 });
- 
+
 // ── FIREBASE ──────────────────────────────────────────────────────────────────
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getAuth, signInWithPopup, signInWithRedirect, getRedirectResult, GoogleAuthProvider, onAuthStateChanged, signOut }
   from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 import { getFirestore, doc, getDoc, setDoc }
   from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
- 
+
 const firebaseConfig = {
   apiKey: "AIzaSyCmUlkihNfxV8CyHOZ-38gcEx27jqU0z04",
   authDomain: "rvc-pilotos-app.firebaseapp.com",
@@ -2981,15 +2981,15 @@ const firebaseConfig = {
   messagingSenderId: "304566913753",
   appId: "1:304566913753:web:f1936de8ca85188338ccc8"
 };
- 
+
 const app  = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db   = getFirestore(app);
- 
+
 let _uid = null;
 let _currentUser = null; // usuario autenticado actual
 let _saveTimer = null;
- 
+
 // ── GUARDAR (debounce 500ms) ───────────────────────────────────────────────────
 async function guardarAhora() {
   if (!_uid) return;
@@ -3003,7 +3003,7 @@ function guardarEstado() {
   clearTimeout(_saveTimer);
   _saveTimer = setTimeout(() => guardarAhora(), 500);
 }
- 
+
 // ── CARGAR ────────────────────────────────────────────────────────────────────
 async function cargarEstado(uid) {
   try {
@@ -3015,7 +3015,7 @@ async function cargarEstado(uid) {
   } catch(e) { console.error('Error cargando:', e); }
   return false;
 }
- 
+
 // ── INICIALIZAR APP ───────────────────────────────────────────────────────────
 function initApp() {
   S.temas.forEach(t => {
@@ -3032,7 +3032,7 @@ function initApp() {
   setInterval(guardarEstado, 30000);
   renderAll();
 }
- 
+
 // ── LOGIN UI ──────────────────────────────────────────────────────────────────
 function mostrarLogin() {
   document.getElementById('app').style.display = 'none';
@@ -3045,11 +3045,11 @@ function mostrarApp(user) {
   const uEl = document.getElementById('user-info');
   if (uEl) { uEl.textContent = user.displayName || user.email; uEl.title = user.email; }
 }
- 
+
 // ── AUTH STATE ────────────────────────────────────────────────────────────────
 // Manejar resultado de redirect (cuando viene de file://)
 getRedirectResult(auth).catch(() => {});
- 
+
 onAuthStateChanged(auth, async user => {
   if (user) {
     _uid = user.uid;
@@ -3059,16 +3059,16 @@ onAuthStateChanged(auth, async user => {
       const snap = await getDoc(doc(db, 'gestion_reuniones_perfil', _uid));
       if (snap.exists()) perfil = snap.data();
     } catch(e) {}
- 
+
     _currentUser = {
       n: perfil?.nombre || user.displayName || user.email.split('@')[0],
       c: perfil?.cargo || ''
     };
- 
+
     mostrarApp(user);
     const tieneDatos = await cargarEstado(_uid);
     if (!tieneDatos) S.temas = [];
- 
+
     // Sincronizar cargo del usuario actual en todos los participantes
     if (_currentUser.c) {
       if (!S.personasGlobal) S.personasGlobal = [];
@@ -3083,9 +3083,9 @@ onAuthStateChanged(auth, async user => {
         });
       });
     }
- 
+
     initApp();
- 
+
     // Si no tiene cargo guardado, mostrar modal de perfil
     if (!perfil?.cargo) {
       setTimeout(() => mostrarModalPerfil(user), 500);
@@ -3094,7 +3094,7 @@ onAuthStateChanged(auth, async user => {
     window.location.href = 'https://pilotos-aplicaciones.github.io/rvc-portal/portal.html';
   }
 });
- 
+
 function mostrarModalPerfil(user) {
   const prev = document.getElementById('modal-perfil');
   if (prev) prev.remove();
@@ -3127,7 +3127,7 @@ function mostrarModalPerfil(user) {
   document.body.appendChild(el);
   document.getElementById('perfil-nombre').focus();
 }
- 
+
 async function guardarPerfil() {
   const nombre = document.getElementById('perfil-nombre')?.value.trim();
   const cargo  = document.getElementById('perfil-cargo')?.value.trim();
@@ -3163,7 +3163,7 @@ async function guardarPerfil() {
   renderAll();
   toast('✓ Perfil guardado');
 }
- 
+
 window.loginGoogle = async () => {
   const btn = document.getElementById('btn-google-login');
   const errEl = document.getElementById('login-error');
@@ -3184,7 +3184,7 @@ window.loginGoogle = async () => {
 window.cerrarSesion = async () => {
   await signOut(auth);
 };
- 
+
 </script>
 </div><!-- /app -->
 </body>
